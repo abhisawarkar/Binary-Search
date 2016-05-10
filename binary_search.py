@@ -9,9 +9,9 @@ def find_element(arr,start,end,element):
 		        return mid
 	
 		if arr[mid] < element:
-			find_element(arr,mid+1,end,element)
+			find_element(arr,mid+1,end,element) 	# check left side 
 		else:
-			find_element(arr,start,mid-1,element)	
+			find_element(arr,start,mid-1,element)	# check right side
 
 	else:
 		return -1
