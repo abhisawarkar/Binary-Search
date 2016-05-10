@@ -1,9 +1,10 @@
 #!/bin/python
+
 def find_element(arr,start,end,element):
 
 	if end-start >= 0:
 		
-		mid = (start+end)/2
+		mid = (start+end)/2		# finds middle element
 		if arr[mid] == element:
 		        return mid
 	
@@ -15,6 +16,4 @@ def find_element(arr,start,end,element):
 	else:
 		return -1
 
-arr=[16,32,48,64,80,96,100]
-print find_element(arr,0,len(arr)-1,100) 
 
